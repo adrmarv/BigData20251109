@@ -30,10 +30,7 @@ def hello_world():
     
     """
     if ENV == 'dev':
-        text += """           <style>
-            body{background-color:red;}
-            </style>"""
-
+        text += "<style>body { background-color: red; }</style>"
     return text
 
 @application.route('/json')
