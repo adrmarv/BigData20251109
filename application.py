@@ -1,7 +1,6 @@
-#n9ie bedzie dzial na tym
+import os
+from flask import Flask, jsonify
 
-from flask import Flask
-import jsonify
 
 application = Flask(__name__)
 
