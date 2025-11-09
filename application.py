@@ -1,8 +1,17 @@
 #n9ie bedzie dzial na tym
 
 from flask import Flask
+import jsonify
 
 application = Flask(__name__)
+
+ENV. os.environ.get('Flask_ENV', 'dev') #pobierz mi zmienna srodowiskowa ale jezeli jej nie znajdziesz to pryjmij ze to jest dev
+
+
+@application.route('/json')
+def get_json():
+    return jsonify({"FLASK_ENV":ENV})
+
 
 @application.route('/')
 def hello_world():
@@ -11,6 +20,9 @@ def hello_world():
     <html>
         <head>
             <title> Witaj swiecie, czesc AGA :)</title>
+            <style>
+            body{background-color:red;}
+            </style>
         </head>
         <body>
             
@@ -23,7 +35,7 @@ def hello_world():
     
     """
     return text
-
+#nie dziala mi to an domyslnym 127.0.0.1:5000 bo projekt nie mam na puplcie tylko w jakims kataalogu, czytalem ze jest an to obesjcie
 if __name__ == "main__":
     application.run(debug=True) #na produkcji powinno to byc wylaczone, wiec dobrze miec taki sam ale drugi plik na proda z tym aylczanym
 
