@@ -10,7 +10,7 @@ def hello_world():
     
     <html>
         <head>
-            <title> Witaj swiecie big data</title>
+            <title> Witaj swiecie, czesc AGA :)</title>
         </head>
         <body>
             
