@@ -20,9 +20,7 @@ def hello_world():
     <html>
         <head>
             <title> Witaj swiecie, czesc AGA :)</title>
-            <style>
-            body{background-color:red;}
-            </style>
+  
         </head>
         <body>
             
@@ -34,6 +32,11 @@ def hello_world():
 
     
     """
+    if ENV == 'dev':
+        text += """           <style>
+            body{background-color:red;}
+            </style>"""
+
     return text
 #nie dziala mi to an domyslnym 127.0.0.1:5000 bo projekt nie mam na puplcie tylko w jakims kataalogu, czytalem ze jest an to obesjcie
 if __name__ == "main__":
