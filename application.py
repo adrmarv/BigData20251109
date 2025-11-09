@@ -15,7 +15,7 @@ def hello_world():
         <body>
             
             <h1>Witaj swiecie! ibig data z pythonem</h1>
-           <p>Procesy CI/CD - autmmatyczne wdrażanie</p>
+           <p>Procesy CI/CD - autmmatyczne wdrażanie, hej AGA :)</p>
         </body>
     
     </html>
