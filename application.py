@@ -5,7 +5,7 @@ import jsonify
 
 application = Flask(__name__)
 
-ENV.os.environ.get('Flask_ENV', 'dev') #pobierz mi zmienna srodowiskowa ale jezeli jej nie znajdziesz to pryjmij ze to jest dev
+ENV = os.environ.get('Flask_ENV', 'dev') #pobierz mi zmienna srodowiskowa ale jezeli jej nie znajdziesz to pryjmij ze to jest dev
 
 
 
